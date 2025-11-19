@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./public/quickcart-cover.png" alt="QuickCart logo" width="80" />
+<img src="./public/quickcart-cover.png" alt="QuickCart logo" width="320" />
 
 # QuickCart
 
