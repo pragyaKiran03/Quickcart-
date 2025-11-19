@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
 
-## Getting Started
+<img src="./public/quickcart-cover.png" alt="QuickCart logo" width="80" />
 
-First, run the development server:
+# QuickCart
+
+Modern e-commerce experience built with Next.js App Router, Tailwind CSS, and a lightweight global context for cart, checkout, and seller workflows.
+
+</div>
+
+## ✨ Highlights
+
+- **Customer storefront** with curated hero slider, featured products, product detail views, and cart/order flows.
+- **Seller dashboard** for listing products, monitoring orders, and managing fulfillment steps.
+- **Responsive layout** powered by Tailwind CSS and reusable components (`Navbar`, `Footer`, `ProductCard`, etc.).
+- **Context-based state** via `context/AppContext.jsx` for sharing cart data and UI state across the app.
+- **Plug-and-play UI assets** stored under `assets/` for consistent iconography and imagery.
+
+## 🛠️ Tech Stack
+
+- [Next.js 14+ (App Router)](https://nextjs.org/docs/app)
+- React server & client components
+- Tailwind CSS
+- Context API
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ (LTS recommended)
+- npm (bundled with Node) or your preferred package manager
+
+### Installation
+
+```bash
+git clone <your-fork-or-repo-url>
+cd QuickCart
+npm install
+```
+
+### Local Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit http://localhost:3000 to explore the storefront and seller views. Hot reloading is enabled out of the box.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+QuickCart/
+├─ app/               # App Router routes for storefront, cart, checkout, seller views
+├─ components/        # Reusable UI blocks (customer + seller dashboards)
+├─ assets/            # SVG/PNG assets referenced throughout the UI
+├─ context/           # App-wide React context providers
+├─ lib/               # Auth helpers and shared utilities
+└─ public/            # Static files served by Next.js
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Configuration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Environment variables can be added via `.env.local` if you connect real APIs (e.g., authentication, product service, payments). Add any required keys and restart the dev server.
 
-## Deploy on Vercel
+## ✅ Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Script | Description |
+| --- | --- |
+| `npm run dev` | Start the local Next.js dev server |
+| `npm run build` | Create an optimized production build |
+| `npm start` | Run the built app with Node |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Contributing
+
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature/amazing-feature`.
+3. Commit your changes and open a pull request describing the motivation, screenshots, and testing steps.
+
+## 📄 License
+
+This project is provided for educational/demo purposes. Adapt or extend it for your own storefront needs.
